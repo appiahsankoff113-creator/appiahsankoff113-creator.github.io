@@ -15,3 +15,8 @@ SEO files:
 - `index.html` with canonical, description, Open Graph and Twitter metadata.
 - `robots.txt` allows crawling of the public landing.
 - `sitemap.xml` contains only the public landing URL.
+
+Current release state:
+- GitHub Pages is enabled from `main` / root.
+- Latest Pages build is automatically triggered by commits to `main`.
+- The public landing is intended to be the only indexable NIGHTLAB surface during this launch phase.
