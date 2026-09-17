@@ -10,3 +10,8 @@ Architecture:
 - The Vercel application remains `noindex` until a later deliberate release decision.
 
 The public landing is 18+ and links to the application and privacy notice. It contains no account system, no intimate-image upload, and no third-party tracking SDKs.
+
+SEO files:
+- `index.html` with canonical, description, Open Graph and Twitter metadata.
+- `robots.txt` allows crawling of the public landing.
+- `sitemap.xml` contains only the public landing URL.
