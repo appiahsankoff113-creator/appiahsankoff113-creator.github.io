@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://appiahsankoff113-creator.github.io/sitemap.xml
