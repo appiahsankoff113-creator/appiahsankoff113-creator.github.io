@@ -4,29 +4,46 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
-  <meta http-equiv="refresh" content="2; url=https://nightlab.vercel.app" />
-  <title>NIGHTLAB</title>
+  <meta name="theme-color" content="#0b0b10" />
+  <meta name="description" content="NIGHTLAB — private adult micro-interactives for adults 18+. No signup required." />
+  <title>NIGHTLAB — private adult curiosity lab</title>
   <style>
-    :root{color-scheme:dark}
+    :root{color-scheme:dark;--bg:#0b0b10;--panel:#15151e;--text:#f4f4f7;--muted:#a2a2b3;--line:#2b2b38;--accent:#f26bb2;--accent2:#8b7cff}
     *{box-sizing:border-box}
-    html,body{margin:0;min-height:100%;background:#0b0b10;color:#f4f4f7;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    body{display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 30% 0%,#20142a 0,#0b0b10 42%)}
-    main{width:min(680px,100%);text-align:center;padding:48px 24px;border:1px solid #2b2b38;border-radius:24px;background:rgba(20,20,28,.9)}
-    .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#d6a5c9;font-weight:800}
-    h1{font-size:clamp(44px,10vw,82px);letter-spacing:-.05em;margin:12px 0 18px}
-    p{color:#a2a2b3;line-height:1.65;margin:0 auto 24px;max-width:520px}
-    a{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:14px;background:linear-gradient(135deg,#f26bb2,#8b7cff);color:#fff;text-decoration:none;font-weight:800}
-    small{display:block;color:#777788;margin-top:22px}
+    html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    body{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 28% 0%,#281633 0,var(--bg) 44%)}
+    main{width:min(760px,100%);padding:48px 28px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.018));box-shadow:0 24px 80px rgba(0,0,0,.35)}
+    .brand{font-weight:900;letter-spacing:.12em;font-size:14px}
+    .eyebrow{margin-top:34px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#d6a5c9;font-weight:800}
+    h1{font-size:clamp(44px,9vw,82px);line-height:.95;letter-spacing:-.055em;margin:12px 0 20px}
+    .lead{max-width:620px;color:var(--muted);font-size:18px;line-height:1.65;margin:0 0 28px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}
+    .cta,.secondary{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:14px;text-decoration:none;font-weight:800}
+    .cta{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff}
+    .secondary{border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.025)}
+    .trust{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+    .trust span{border:1px solid var(--line);border-radius:999px;padding:8px 11px;color:var(--muted);font-size:12px}
+    .note{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);color:#777788;font-size:12px;line-height:1.55}
+    @media(max-width:560px){main{padding:34px 20px}.actions{display:grid}.cta,.secondary{width:100%}}
   </style>
 </head>
 <body>
   <main>
+    <div class="brand">NIGHTLAB</div>
     <div class="eyebrow">18+ · private · no signup</div>
-    <h1>NIGHTLAB</h1>
-    <p>Redirecting to the current NIGHTLAB production experience.</p>
-    <a href="https://nightlab.vercel.app">Open NIGHTLAB</a>
-    <small>Entertainment only · 18+</small>
+    <h1>Pick one.<br>Know something new.</h1>
+    <p class="lead">Fast adult micro-interactives built around curiosity and self-discovery. No account wall, no dating marketplace, and no intimate-image upload in the current release.</p>
+    <div class="actions">
+      <a class="cta" href="https://nightlab.vercel.app">Enter NIGHTLAB</a>
+      <a class="secondary" href="https://nightlab.vercel.app/privacy">Privacy</a>
+    </div>
+    <div class="trust" aria-label="NIGHTLAB promises">
+      <span>Adults 18+ only</span>
+      <span>No signup required</span>
+      <span>Private by default</span>
+      <span>Entertainment, not medical advice</span>
+    </div>
+    <div class="note">This GitHub Pages site is the free public entry page. The interactive NIGHTLAB application runs on the production service at nightlab.vercel.app.</div>
   </main>
-  <script>setTimeout(function(){location.replace('https://nightlab.vercel.app')},1500)</script>
 </body>
 </html>
