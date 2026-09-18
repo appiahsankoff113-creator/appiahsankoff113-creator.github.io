@@ -8,36 +8,42 @@
   <meta name="theme-color" content="#0b0b10" />
   <meta name="description" content="NIGHTLAB is a private adult curiosity lab with fast 18+ micro-interactives for self-discovery. No signup required." />
   <link rel="canonical" href="https://appiahsankoff113-creator.github.io/" />
-
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="NIGHTLAB" />
   <meta property="og:title" content="NIGHTLAB — private adult curiosity lab" />
   <meta property="og:description" content="Fast, private 18+ micro-interactives for curiosity and self-discovery. No signup required." />
   <meta property="og:url" content="https://appiahsankoff113-creator.github.io/" />
-
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="NIGHTLAB — private adult curiosity lab" />
   <meta name="twitter:description" content="Fast, private 18+ micro-interactives for curiosity and self-discovery." />
-
   <title>NIGHTLAB — private adult curiosity lab</title>
   <style>
     :root{color-scheme:dark;--bg:#0b0b10;--panel:#15151e;--text:#f4f4f7;--muted:#a2a2b3;--line:#2b2b38;--accent:#f26bb2;--accent2:#8b7cff}
     *{box-sizing:border-box}
     html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    body{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 28% 0%,#281633 0,var(--bg) 44%)}
-    main{width:min(760px,100%);padding:48px 28px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.018));box-shadow:0 24px 80px rgba(0,0,0,.35)}
+    body{padding:24px;background:radial-gradient(circle at 28% 0%,#281633 0,var(--bg) 44%)}
+    main{width:min(920px,100%);margin:24px auto;padding:48px 28px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.018));box-shadow:0 24px 80px rgba(0,0,0,.35)}
     .brand{font-weight:900;letter-spacing:.12em;font-size:14px}
     .eyebrow{margin-top:34px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#d6a5c9;font-weight:800}
     h1{font-size:clamp(44px,9vw,82px);line-height:.95;letter-spacing:-.055em;margin:12px 0 20px}
-    .lead{max-width:620px;color:var(--muted);font-size:18px;line-height:1.65;margin:0 0 28px}
+    .lead{max-width:680px;color:var(--muted);font-size:18px;line-height:1.65;margin:0 0 28px}
     .actions{display:flex;flex-wrap:wrap;gap:12px}
     .cta,.secondary{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:14px;text-decoration:none;font-weight:800}
     .cta{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff}
     .secondary{border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.025)}
+    .labs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+    .lab{display:block;padding:20px;border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--text);background:rgba(255,255,255,.025);transition:transform .15s ease,border-color .15s ease,background .15s ease}
+    .lab:hover{transform:translateY(-2px);border-color:#5a4967;background:rgba(255,255,255,.045)}
+    .labTop{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}
+    .labTag{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#d6a5c9;font-weight:800}
+    .time{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 8px}
+    .lab h2{font-size:24px;margin:0 0 8px;letter-spacing:-.03em}
+    .lab p{margin:0;color:var(--muted);line-height:1.5;font-size:14px}
     .trust{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
     .trust span{border:1px solid var(--line);border-radius:999px;padding:8px 11px;color:var(--muted);font-size:12px}
     .note{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);color:#777788;font-size:12px;line-height:1.55}
-    @media(max-width:560px){main{padding:34px 20px}.actions{display:grid}.cta,.secondary{width:100%}}
+    @media(max-width:700px){.labs{grid-template-columns:1fr}}
+    @media(max-width:560px){body{padding:12px}main{margin:8px auto;padding:34px 20px}.actions{display:grid}.cta,.secondary{width:100%}}
   </style>
 </head>
 <body>
@@ -47,16 +53,40 @@
     <h1>Pick one.<br>Know something new.</h1>
     <p class="lead">Fast adult micro-interactives built around curiosity and self-discovery. No account wall, no dating marketplace, and no intimate-image upload in the current release.</p>
     <div class="actions">
-      <a class="cta" href="https://nightlab.vercel.app/?entry=github-pages" rel="noopener">Enter NIGHTLAB</a>
+      <a class="cta" href="https://nightlab.vercel.app/?entry=github-pages" rel="noopener">Open NIGHTLAB</a>
       <a class="secondary" href="https://nightlab.vercel.app/privacy" rel="noopener">Privacy</a>
     </div>
+
+    <div class="labs" aria-label="Choose a NIGHTLAB experience">
+      <a class="lab" href="https://nightlab.vercel.app/size-lab?entry=github-pages" rel="noopener">
+        <div class="labTop"><span class="labTag">Measure</span><span class="time">~30 sec</span></div>
+        <h2>Size Lab</h2>
+        <p>Enter two measurements and get a private geometry profile. No camera, no upload.</p>
+      </a>
+      <a class="lab" href="https://nightlab.vercel.app/attraction-dna?entry=github-pages" rel="noopener">
+        <div class="labTop"><span class="labTag">Choose</span><span class="time">~45 sec</span></div>
+        <h2>Attraction DNA</h2>
+        <p>Make fast A/B choices and reveal the cues you repeatedly gravitate toward.</p>
+      </a>
+      <a class="lab" href="https://nightlab.vercel.app/sexual-dna?entry=github-pages" rel="noopener">
+        <div class="labTop"><span class="labTag">Discover</span><span class="time">~60 sec</span></div>
+        <h2>Sexual DNA</h2>
+        <p>A compact, non-graphic self-discovery flow with a readable exploration profile.</p>
+      </a>
+      <a class="lab" href="https://nightlab.vercel.app/tonight?entry=github-pages" rel="noopener">
+        <div class="labTop"><span class="labTag">Play</span><span class="time">~20 sec</span></div>
+        <h2>Tonight</h2>
+        <p>Pick mood and energy, then get a quick adult-wellness prompt for solo or couple mode.</p>
+      </a>
+    </div>
+
     <div class="trust" aria-label="NIGHTLAB promises">
       <span>Adults 18+ only</span>
       <span>No signup required</span>
       <span>Private by default</span>
       <span>Entertainment, not medical advice</span>
     </div>
-    <div class="note">This GitHub Pages site is the free public entry page. The interactive NIGHTLAB application runs on the production service at nightlab.vercel.app.</div>
+    <div class="note">This GitHub Pages site is the free public entry page. Interactive NIGHTLAB tools run on the production service at nightlab.vercel.app.</div>
   </main>
 </body>
 </html>
